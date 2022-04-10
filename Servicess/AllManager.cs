@@ -177,7 +177,7 @@ namespace Services
             List<MenuItem> newMenuItems = new List<MenuItem>();
             foreach (var item in menuItems1)
             {
-                if (item.catagory1==Catagory.Sup)
+                if (item.catagory1==catagory)
                 {
                     newMenuItems.Add(item);
                 }
@@ -218,29 +218,6 @@ namespace Services
             return newMenuItem;
         }
 
-        List<MenuItem> IRestaurantManager.MenuItems()
-        {
-            throw new NotImplementedException();
-        }
-
-        List<MenuItem> IRestaurantManager.EditMenuItem(int? no)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<MenuItem> IRestaurantManager.EditMenuItem(Catagory catagory)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<MenuItem> IRestaurantManager.EditMenuItem(double min, double max)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<MenuItem> IRestaurantManager.EditMenuItem(string text)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
